@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/switchHemi"
+        android:layout_width="356dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:checked="true"
+        android:clickable="true"
+        android:showText="true"
+        android:splitTrack="false"
+        android:text="Półkula:"
+        android:textOff="N"
+        android:textOn="S"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSettings" />
+
+    <TextView
+        android:id="@+id/titleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Opcje"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAlgo"
+        android:layout_width="356dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Algorytm:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchHemi" />
+
+    <RadioGroup
+        android:id="@+id/algorithms"
+        android:layout_width="356dp"
+        android:layout_height="273dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAlgo"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/algoSimple"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:checked="true"
+            android:text="Simple" />
+
+        <RadioButton
+            android:id="@+id/algoConway"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Conway" />
+
+        <RadioButton
+            android:id="@+id/algoTrig1"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:checked="true"
+            android:text="Trig1" />
+
+        <RadioButton
+            android:id="@+id/algoTrig2"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Trig2" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
